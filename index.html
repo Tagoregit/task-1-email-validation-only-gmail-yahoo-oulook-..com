@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>web site</legend>
+        <form action="./response.html" method="get">
+            <label for="na">Username:</label><br>
+            <input type="text" name="username" id="na" placeholder="Username" pattern="[A-Z]+" required><br>
+            <label for="mail">Mail:</label><br>
+            <input type="text" name="mail" id="mail" placeholder="Mail"
+                pattern="[a-z0-9]+@(gmail|yahoo|outlook)\.com" required autocomplete="off"><br>
+            <label for="pas">Password:</label><br>
+            <input type="text" name="password" id="pas" placeholder="Password"
+                pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$&*]).{8,16}" required autocomplete="off"><br>
+            <input type="submit" value="submit">
+
+
+        </form>
+    </fieldset>
+</body>
+
+</html>
